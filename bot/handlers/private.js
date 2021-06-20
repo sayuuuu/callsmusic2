@@ -7,7 +7,7 @@ composer.command("start", async (ctx) => {
     await ctx.reply(
         `<b>👋🏻 Hi ${createUserLink(ctx.from)}!</b>
 
-I am Calls Music bot, I let you play music in group calls.
+I am Kaori, I let you play music in group calls.
 
 The commands I currently support are:
 
@@ -18,9 +18,8 @@ The commands I currently support are:
 /stop - clear the queue and remove the userbot from the call`,
         {
             reply_markup: new InlineKeyboard()
-                .url("🔈 News Channel", "https://t.me/callsmusic")
-                .row()
-                .url("💬 Support Group", "https://t.me/callsmusicchat"),
+                .url("Add me to your chat", "http://t.me/kaoriimusicbot?startgroup=botstart")
+                
         }
     );
 });
